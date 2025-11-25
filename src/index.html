@@ -1,13 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Restaurantsample</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+      .restaurant-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .restaurant-card {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+      .restaurant-card:hover {
+        transform: translateY(-5px);
+      }
+      .restaurant-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .restaurant-content {
+        padding: 15px;
+      }
+      .restaurant-name {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .restaurant-location,
+      .restaurant-contact,
+      .restaurant-hours {
+        font-size: 0.9em;
+        color: #555;
+        margin: 3px 0;
+      }
+      .restaurant-description {
+        margin: 10px 0;
+      }
+      .restaurant-link {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Restaurant Directory</h1>
+    <div class="restaurant-container">
+      <!-- Restaurant 1 -->
+      <div class="restaurant-card">
+        <img
+          class="restaurant-image"
+          src="https://images.unsplash.com/photo-1543353071-10c8ba85a904"
+          alt="The Gourmet Kitchen"
+        />
+        <div class="restaurant-content">
+          <div class="restaurant-name">The Gourmet Kitchen</div>
+          <div class="restaurant-location">123 Main St, New York, NY</div>
+          <div class="restaurant-contact">📞 123-456-7890</div>
+          <div class="restaurant-hours">🕒 10:00 AM - 10:00 PM</div>
+          <div class="restaurant-description">
+            A fine dining experience offering gourmet dishes crafted by
+            world-class chefs. Known for its exquisite steak and seafood
+            options, The Gourmet Kitchen is the perfect place for special
+            occasions and fine dining lovers.
+          </div>
+          <a
+            class="restaurant-link"
+            href="https://thegourmetkitchen.com"
+            target="_blank"
+            >Visit Website</a
+          >
+        </div>
+      </div>
+
+      <!-- Restaurant 2 -->
+      <div class="restaurant-card">
+        <img
+          class="restaurant-image"
+          src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+          alt="Ocean Breeze Cafe"
+        />
+        <div class="restaurant-content">
+          <div class="restaurant-name">Ocean Breeze Cafe</div>
+          <div class="restaurant-location">456 Beach Ave, Miami, FL</div>
+          <div class="restaurant-contact">📞 987-654-3210</div>
+          <div class="restaurant-hours">🕒 8:00 AM - 8:00 PM</div>
+          <div class="restaurant-description">
+            A cozy beachfront café with stunning ocean views, serving fresh
+            seafood, tropical drinks, and organic breakfast options. A
+            must-visit spot for those who love relaxed vibes and great food.
+          </div>
+          <a
+            class="restaurant-link"
+            href="https://oceanbreezecafe.com"
+            target="_blank"
+            >Visit Website</a
+          >
+        </div>
+      </div>
+
+      <!-- Restaurant 3 -->
+      <div class="restaurant-card">
+        <img
+          class="restaurant-image"
+          src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
+          alt="Spicy Delights"
+        />
+        <div class="restaurant-content">
+          <div class="restaurant-name">Spicy Delights</div>
+          <div class="restaurant-location">789 Curry Rd, San Francisco, CA</div>
+          <div class="restaurant-contact">📞 555-333-2222</div>
+          <div class="restaurant-hours">🕒 11:00 AM - 11:00 PM</div>
+          <div class="restaurant-description">
+            A vibrant Indian restaurant known for its bold flavors, rich spices,
+            and authentic South Asian cuisine. Whether you love spicy curries or
+            mild biryanis, Spicy Delights has something for every taste.
+          </div>
+          <a
+            class="restaurant-link"
+            href="https://spicydelights.com"
+            target="_blank"
+            >Visit Website</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
